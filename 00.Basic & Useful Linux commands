@@ -1,0 +1,4 @@
+##change your hostname
+hostnamectl set-hostname senthildockersvr
+bash
+
