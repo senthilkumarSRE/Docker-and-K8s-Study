@@ -1,0 +1,44 @@
+Container Lifestyle
+=creation
+docker container run – t -I -d <image name:tag name>
+-t = terminal
+-I = interactive
+-d = detach mode 
+
+=Check or List:
+Docker container ls ( Docker will display only running containers)
+Docker container ls -a  (this command display all containers both stopped & running)
+Docker container ls -l ( this will show you last created container)
+Docker container ls -q ( this will display the short ids for all running containers)
+Docker container ls -aq ( this will display the short ids for all running & stopped containers)
+
+=Stop/start
+Docker container stop <container-name>
+Docker container start <container-name>
+
+=  Name to a container
+Docker container run -itd –name <name> <image name:tag name>
+
+=  Rename a container
+Docker container rename  <old container name> <new container name >
+
+=  Login inside a container
+Docker container exec -it <container-name> /bin/bash   ( or /bin/sh)
+Exit
+
+=  Logs
+Docker container logs  < container name >
+Docker container logs --help
+
+
+One docker host contains 100 containers, got alert for high memory issues. So now need to check which container having high utilization but checking manually for 100 containers are nearly impossible and time consume. 
+
+=  Stats
+Docker container stats
+
+= inspect (Details about Container)
+Docker container inspect < container name >
+
+=  Decom : Stop and Remove
+Docker container stop < container name >
+Docker container rm < container name >
