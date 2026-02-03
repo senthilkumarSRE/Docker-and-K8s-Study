@@ -2,3 +2,8 @@
 hostnamectl set-hostname senthildockersvr
 bash
 
+##Histoty with Date
+export HISTTIMEFORMAT="%F %T "
+history
+
+
